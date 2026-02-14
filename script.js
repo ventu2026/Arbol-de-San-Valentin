@@ -139,7 +139,7 @@
     }));
 
     var textAnimate = eval(Jscex.compile("async", function () {
-    var together = new Date(2025, 9, 20, 14, 52, 0);
+    var together = new Date(2025, 9, 20, 21, 52, 0);
 
     $("#code").show().typewriter();
     $("#clock-box").fadeIn(500);
