@@ -139,20 +139,16 @@
     }));
 
     var textAnimate = eval(Jscex.compile("async", function () {
-        var together = new Date();
-        together.setFullYear(2025, 1, 14);
-        together.setHours(0);
-        together.setMinutes(0);
-        together.setSeconds(0);
-        together.setMilliseconds(0);
+    var together = new Date(2025, 9, 20, 14, 52, 0);
 
-        $("#code").show().typewriter();
-        $("#clock-box").fadeIn(500);
-        while (true) {
-            timeElapse(together);
-            $await(Jscex.Async.sleep(1000));
-        }
-    }));
+    $("#code").show().typewriter();
+    $("#clock-box").fadeIn(500);
+
+    while (true) {
+        timeElapse(together);
+        $await(Jscex.Async.sleep(1000));
+    }
+}));
 
     var runAsync = eval(Jscex.compile("async", function () {
         $await(seedAnimate());
