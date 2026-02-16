@@ -60,7 +60,7 @@ function timeElapse(date) {
 }
 
 // October = 9 (months are 0-based in JavaScript)
-var startDate = new Date(2025, 9, 18, 14, 52, 0);
+var startDate = new Date(2025, 9, 18, 5, 52, 0);
 
 timeElapse(startDate);
 setInterval(function () {
